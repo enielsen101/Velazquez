@@ -1,0 +1,205 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+*{font-family: 
+    Merriweather, Aleo;}
+
+body{
+    background-color: 
+    whitesmoke;
+}
+
+figure{
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+figcaption{
+    font-style: 
+    italic;
+    font-size: 12px;
+}
+
+/*image div here*/
+
+.center{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+.container{
+    margin: 20px;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+h1{
+    text-transform: 
+    uppercase;     
+}
+
+h2{
+    margin-bottom: 
+    -15px;
+    font-size: 16px;
+}
+
+/*Headers of individual sections*/
+
+h3{
+    text-transform: 
+    uppercase;
+    strong;
+    color: black;
+    background-color: lightblue;
+    font-size: 20px;
+    margin-bottom: -10px;
+    margin-top: -1px;
+}
+
+/*Healthcare symbol*/
+
+.health{
+    max-width: 88px;
+    max-height: 100px;
+    float: left;
+
+}
+
+/*Healthcare flexbox*/
+
+.section1{
+    display: flex;
+    max-width: 700px;
+    align-items: vertical;
+    margin-bottom: 10px;
+    gap: 10px;
+
+}
+
+/*house symbol*/
+
+.house{
+    max-width: 88px;
+    max-height: 120px;
+    float: left;
+}
+
+.section2{
+    display: flex;
+    max-width: 700px;
+    align-items: vertical;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+/*small business symbol*/
+
+.business{
+    max-width: 88px;
+    max-height: 120px;
+    float: left;
+}
+
+.section3{
+    display: flex;
+    max-width: 700px;
+    align-items: vertical;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+/*Puerto Rico flag*/
+
+.PR{
+    max-width: 88px;
+    max-height: 90px;
+    float: left;
+}
+
+.section4{
+    display: flex;
+    max-width: 700px;
+    align-items: vertical;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+h1{
+    text-transform: 
+    uppercase; 
+    font-size: 35px;
+    font-color: black;
+    margin: auto;    
+}
+
+h3{
+    text-transform: 
+    uppercase;
+    strong;
+    color: black;
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+/*div for desktop here*/
+
+    .container{
+
+    margin: 20px;
+    max-width: 700px;
+    margin: auto;
+} 
+
+
+/*make img centered on desktop*/
+
+.center{
+    max-width: 100%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*All of my desktop rules need
+to be above this bracket.*/
+
+
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
